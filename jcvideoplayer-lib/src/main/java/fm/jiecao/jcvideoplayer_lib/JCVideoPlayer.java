@@ -1,5 +1,6 @@
 package fm.jiecao.jcvideoplayer_lib;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.hardware.Sensor;
@@ -10,7 +11,6 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.provider.Settings;
-import android.support.v7.app.ActionBar;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -853,9 +853,8 @@ public abstract class JCVideoPlayer extends FrameLayout implements View.OnClickL
 
     public static void showSupportActionBar(Context context) {
         if (ACTION_BAR_EXIST) {
-            ActionBar ab = JCUtils.getAppCompActivity(context).getSupportActionBar();
+            ActionBar ab = JCUtils.getAppCompActivity(context).getActionBar();
             if (ab != null) {
-                ab.setShowHideAnimationEnabled(false);
                 ab.show();
             }
         }
@@ -866,9 +865,8 @@ public abstract class JCVideoPlayer extends FrameLayout implements View.OnClickL
 
     public static void hideSupportActionBar(Context context) {
         if (ACTION_BAR_EXIST) {
-            ActionBar ab = JCUtils.getAppCompActivity(context).getSupportActionBar();
+            ActionBar ab = JCUtils.getAppCompActivity(context).getActionBar();
             if (ab != null) {
-                ab.setShowHideAnimationEnabled(false);
                 ab.hide();
             }
         }

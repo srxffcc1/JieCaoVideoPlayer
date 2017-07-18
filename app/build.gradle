@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion '26.0.0'
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "fm.jiecao.jiecaovideoplayer"
@@ -28,6 +28,7 @@ dependencies {
     compile project(':jcvideoplayer-lib')
     compile 'com.squareup.picasso:picasso:2.5.1'
 
+    compile 'com.android.support:appcompat-v7:25.3.1'
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'

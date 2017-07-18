@@ -27,7 +27,7 @@ public class PlayDirectlyActivity extends AppCompatActivity implements View.OnCl
         getSupportActionBar().setDisplayUseLogoEnabled(false);
         getSupportActionBar().setTitle("PlayDirectlyWithoutLayout");
         setContentView(R.layout.activity_directly_play);
-
+        getSupportActionBar().hide();
         mStartFullscreen = (Button) findViewById(R.id.fullscreen);
         mStartTiny = (Button) findViewById(R.id.tiny_window);
 
